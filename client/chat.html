@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>chatroom</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="main-container">
+    <form class="content-container">
+        <header class="chat-header">
+            <div class="logo-inline">
+                <div class="emoji-anim cat-anim" role="img" aria-label="cat-anim"></div>
+                <h1>KittyChat</h1>
+            </div>
+            <a href="index.html" class="leave-btn">
+                Leave
+            </a>
+        </header>
+        <div class="target-container">
+
+            <div id="emoji-popup-id" class="emoji-popup toggle-popup">
+                <div class="emoji" onclick="addEmoji(this.innerHTML)">🙀</div>
+                <div class="emoji" onclick="addEmoji(this.innerHTML)">😽</div>
+                <div class="emoji" onclick="addEmoji(this.innerHTML)">😸</div>
+                <div class="emoji" onclick="addEmoji(this.innerHTML)">😿</div>
+                <div class="emoji" onclick="addEmoji(this.innerHTML)">😾</div>
+                <div class="emoji" onclick="addEmoji(this.innerHTML)">😻</div>
+                <div class="emoji" onclick="addEmoji(this.innerHTML)">😺</div>
+                <div class="emoji" onclick="addEmoji(this.innerHTML)">😼</div>
+                <div class="emoji" onclick="addEmoji(this.innerHTML)">😹</div>
+                <div class="emoji" onclick="addEmoji(this.innerHTML)">🐱</div>
+            </div>
+            <div class="target"></div>
+
+
+        </div>
+        <div class="input-container">
+            <div class="chat-input-container">
+                <textarea id="input" type="text" autocomplete="off"></textarea>
+                <button type="button" class="emo-btn" onclick="toggleEmojiPopup()">🐱</button>
+            </div>
+            <div class="buttons-container">
+                <button class="send-button" id="sendAllBtn">send to all</button>
+                <button class="send-button" id="sendMeBtn">send to me</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!--<div class="join-container-form">-->
+<!--    <label for="username">Username:</label>-->
+<!--    <input type="text" id="username" name="username" placeholder="Enter username" required>-->
+<!--    <label for="chatroom">Chatroom:</label>-->
+<!--    <select id="chatroom" name="chatroom">-->
+<!--        <option value="catnip">catnip</option>-->
+<!--        <option value="boxes">boxes</option>-->
+<!--        <option value="naps">naps</option>-->
+<!--        <option value="food">food</option>-->
+<!--    </select>-->
+<!--    <button id="login" class="enter-btn" type="submit">Enter Chat</button>-->
+<!--</div>-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.1/qs.min.js" integrity="sha512-aTKlYRb1QfU1jlF3k+aS4AqTpnTXci4R79mkdie/bp6Xm51O5O3ESAYhvg6zoicj/PD6VYY0XrYwsWLcvGiKZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
