@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.emoji-anim {
+    font-size: calc(100px + 4vw);
+    min-width: 1.4em;
+    margin: 0.3em 0.4em;
+    text-align: center;
+}
+
+.emoji-anim::after {
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.cat-anim::after {
+    content: '🐱';
+    --emoji-1: '😺';
+    --emoji-2: '😸';
+    animation-name: threeFrames;
+    animation-duration: 1.5s;
+}
+
+
+@keyframes threeFrames {
+    33.333% {
+        content: var(--emoji-1);
+    }
+
+    66.666% {
+        content: var(--emoji-2);
+    }
+}
