@@ -1,7 +1,7 @@
 const users = [];
 
 function userJoin(id, username, chatroom) {
-    const user = {id, username, chatroom};
+    const user = { id, username, chatroom };
 
     users.push(user);
 
@@ -20,10 +20,13 @@ function userLeave(id) {
     }
 }
 
-function getRoomUsers(room){
-    return users.filter(user => user.chatroom === room);
+function getRoomUsers(chatroom) {
+    return users.filter(user => user.chatroom === chatroom);
 }
 
 module.exports = {
-    userJoin, getCurrentUser, userLeave, getRoomUsers
+    userJoin,
+    getCurrentUser,
+    userLeave,
+    getRoomUsers
 };
