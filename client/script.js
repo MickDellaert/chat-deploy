@@ -112,3 +112,4 @@ function toggleEmojiPopup() {
     let popup = document.getElementById("emoji-popup-id");
     popup.classList.toggle("toggle-popup");
 }
+

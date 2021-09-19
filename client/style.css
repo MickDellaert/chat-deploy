@@ -260,64 +260,7 @@ textarea:focus {
     }
 }
 
-@media (max-width: 700px) {
-    .chat-input-container {
-        margin-right: 0;
-        margin-bottom: 8px;
-    }
-    .input-container {
-        display: block;
-    }
-    .buttons-container {
-        display: flex;
-        margin-left: -4px;
-        margin-right: -4px;
-    }
-    .send-button {
-        flex: 1;
-        margin: 4px;
-    }
-    body {
-        margin: 0px;
-    }
-    .sidebar {
-        display: none;
-    }
-    .main-container {
-        height: 100vh;
-        margin: 0px;
-        border: 3px solid white;
-    }
-    .content-container {
-        height: 65vh;
-    }
-    .target-container {
-        height: auto;
-    }
-    .logo-inline {
-        width: 100px;
-    }
-    .chat-header h1 {
-        font-size: 20px;
-    }
-    .chat-header {
-        margin-bottom: 20px;
-    }
-    .emoji-anim {
-        font-size: 30px;
-    }
-    /* .leave-btn {
-        background-color: #ffc83d;
-        border: none;
-        padding: 10px;
-        border-radius: 5px;
-        color: black;
-        width: 55px;
-        height: 30px;
-        font-size: 15px;
-        text-align: center;
-    } */
-}
+
 
 .sidebar {
     background-color: #f5755d;
@@ -429,7 +372,7 @@ textarea:focus {
     background-color: #d1f5fc;
     border-radius: 30px 30px 30px 0;
     padding: 10px 15px;
-    margin-lef: 5px;
+    margin-left: 5px;
 }
 
 #sidebar-chatroom{
@@ -445,3 +388,61 @@ textarea:focus {
     margin-bottom: 10px;
 }
 
+@media (max-width: 700px) {
+    .chat-input-container {
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+    .input-container {
+        display: block;
+    }
+    .buttons-container {
+        display: flex;
+        margin-left: -4px;
+        margin-right: -4px;
+    }
+    .send-button {
+        flex: 1;
+        margin: 4px;
+    }
+    body {
+        margin: 0px;
+    }
+    .sidebar {
+        display: none;
+    }
+    .main-container {
+        height: 100vh;
+        margin: 0px;
+        border: 3px solid white;
+    }
+    .content-container {
+        height: 65vh;
+    }
+    .target-container {
+        height: 65vh;
+    }
+    .logo-inline {
+        width: 100px;
+    }
+    .chat-header h1 {
+        font-size: 20px;
+    }
+    .chat-header {
+        margin-bottom: 20px;
+    }
+    .emoji-anim {
+        font-size: 30px;
+    }
+    /* .leave-btn {
+        background-color: #ffc83d;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        color: black;
+        width: 55px;
+        height: 30px;
+        font-size: 15px;
+        text-align: center;
+    } */
+}
